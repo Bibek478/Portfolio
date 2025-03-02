@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="name">
+        <h1>Bibek Roy</h1>
+      </div>
+      <!-- Hamburger Menu Icon -->
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#profile">Home</a></li>
+        <li><a href="#About">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="profile" class="card-section">
+    <div class="imgm">
+    <button id="dark-mode-toggle" class="dark-mode-toggle">
+      <span class="toggle-icon">☀️</span> <!-- Sun icon for light mode (default is dark) -->
+    </button>
+      <img src="/Assets/profile-pic.jpg" alt="me" class="imgs">
+    </div>
+    <div class="t">
+      <p class="text">
+        <span class="st">Hi, I'm</span><br>
+        <span class="bt">Bibek Roy</span>
+      </p>
+      <div class="icon">
+        <a href="https://www.linkedin.com/in/bibekroy478/" target="_blank">
+          <img src="Assets/linkedin.png" alt="linkedin">
+        </a>
+        <a href="https://github.com/Bibek478" target="_blank">
+          <img src="Assets/github.png" alt="Github">
+        </a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bibekroy478@gmail.com" target="_blank">
+          <img src="Assets/gmail.png" alt="Email">
+        </a>
+                
+      </div>
+      <div class="btn-container">
+        <a href="Assets/Bibek_Resume.pdf" target="_blank">
+          <button class="btn">Download Resume</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="About" class="card-section">
+    <h2 class="abt">About Me</h2>
+    <div class="about">
+      <div class="content">
+        <div class="box">
+          <h1>Education</h1>
+          <p class="education-title">B.Tech</p>
+          <p class="education-subtitle">Computer Science and Engineering</p>
+          <p class="education-title">Diploma</p>
+          <p class="education-subtitle">Computer Science and Technology</p>
+        </div>
+        <div class="education-content">
+          <p> Motivated and passionate <b>Web Developer</b> currently pursuing a B.Tech in Computer Science and
+            Engineering at the Central Institute of Technology, Kokrajhar. Proficient in responsive web
+            development and skilled in designing, developing, and maintaining efficient, user-friendly web
+            applications. Committed to addressing real-world challenges through technology while
+            continuously advancing skills in the tech industry.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="card-section">
+    <h2 class="abt">Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>A short description of Project 1.</p>
+        <div class="project-buttons">
+          <a href="https://github.com/your-repo" target="_blank" class="btn">View Code</a>
+          <a href="https://your-live-project.com" target="_blank" class="btn">Live Demo</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>A short description of Project 2.</p>
+        <div class="project-buttons">
+          <a href="https://github.com/Bibek478/Sign_in-up" target="_blank" class="btn">View Code</a>
+          <a href="https://bibek478.github.io/Sign_in-up//" target="_blank" class="btn">Live Demo</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3>Project 3</h3>
+        <p>A short description of Project 3.</p>
+        <div class="project-buttons">
+          <a href="https://github.com/Bibek478/Weather_App" target="_blank" class="btn">View Code</a>
+          <a href="https://weather-app-bibek478.vercel.app/" target="_blank" class="btn">Live Demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Skills" class="card-section">
+    <h2 class="abt">Skills</h2>
+    <div class="skill-container">
+        <div class="skill-box">
+          <div class="skill-header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe w-6 h-6 mr-3 text-primary"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+            <p class="skill-title">Frontend Development</p>
+          </div>
+            <ul>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Tailwind CSS</li>
+            </ul>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database w-6 h-6 mr-3 text-primary"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5V19A9 3 0 0 0 21 19V5"></path><path d="M3 12A9 3 0 0 0 21 12"></path></svg>
+            <p class="skill-title">Backend Development</p>
+          </div>
+            <ul>
+                <li>Node.js</li>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>APIs</li>
+            </ul>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-xml w-6 h-6 mr-3 text-primary"><path d="m18 16 4-4-4-4"></path><path d="m6 8-4 4 4 4"></path><path d="m14.5 4-5 16"></path></svg>
+            <p class="skill-title">Programming Languages</p>
+          </div>
+            <ul>
+                <li>Java</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>C++</li>
+            </ul>
+        </div>
+        <div class="skill-box">
+          <div class="skill-header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-laptop w-6 h-6 mr-3 text-primary"><path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16"></path></svg>
+            <p class="skill-title">Tools & Others</p>
+          </div>
+            <ul>
+                <li>Git</li>
+                <li>VS Code</li>
+                <li>Linux</li>
+                <li>Docker</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+  <!-- <section id="contact" class="card-section">
+    <h2 class="abt">Contact Me</h2>
+    <div class="form">
+      <input type="text" name="name" id="namef" placeholder="Your Name" required>
+      <input type="email" name="email" id="email" placeholder="Email" required>
+      <textarea name="message" id="message" placeholder="Type your message" required></textarea>
+      <button class="send">Send</button>
+    </div>
+  </section> -->
+
+  <section id="contact">
+    <h1 class="abt">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="cicon">
+        <a href="https://www.linkedin.com/in/bibekroy478/" target="_blank">
+          <img src="Assets/linkedin.png" alt="linkedin">
+        </a>
+        <!-- <a href="mailto:bibekroy478@gmail.com" target="_blank">
+          <img src="/Assets/gmail.png" alt="Email"> -->
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bibekroy478@gmail.com" target="_blank">
+            <img src="Assets/gmail.png" alt="Email">
+          </a>
+          
+        </a>
+      </div>
+      <!-- <div class="contact-info-container">
+        <img
+          src="/Assets/gmail.png"
+          alt="Email icon"
+          class="icon contact-icon"
+        />
+        <p><a href="mailto:bibekroy478@gmail.com">bibekroy478@gmail.com</a></p>
+      </div> -->
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer">
+      <p>Designed and Developed by Bibek Roy</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
