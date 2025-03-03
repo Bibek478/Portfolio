@@ -57,6 +57,9 @@ localStorage.setItem('theme', 'dark');
 
 // Toggle Dark Mode
 darkModeToggle.addEventListener('click', () => {
+  // Add transitioning class to body
+  document.body.classList.add('theme-transitioning');
+  
   body.classList.toggle('dark');
   if (body.classList.contains('dark')) {
     localStorage.setItem('theme', 'dark');
@@ -65,4 +68,22 @@ darkModeToggle.addEventListener('click', () => {
     localStorage.setItem('theme', 'light');
     darkModeToggle.innerHTML = '🌙'; // Moon icon for dark mode
   }
+
+  // Remove transitioning class after transition completes
+  setTimeout(() => {
+    document.body.classList.remove('theme-transitioning');
+  }, 500);
+});
+
+// Initialize Typed.js
+var typed = new Typed("#typing", {
+  strings: ["<b>B.Tech Student</b>", "<b>Web Developer</b>", "<b>AI/ML</b>", "<b>Tech Enthusiast</b>"],
+  typeSpeed: 100,
+  backSpeed: 50,
+  backDelay: 1000,
+  startDelay: 500,
+  loop: true,
+  showCursor: true,
+  cursorChar: "|",
+  contentType: 'html' // Enable HTML tags in strings
 });

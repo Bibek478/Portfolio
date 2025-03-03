@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="Image/x-icon" href="Assets/favicon.ico">
   <link rel="stylesheet" href="style.css">
-  <title>Portfolio</title>
+  <title>Bibek's Portfolio</title>
 </head>
 <body>
   <header>
@@ -41,6 +42,9 @@
         <span class="st">Hi, I'm</span><br>
         <span class="bt">Bibek Roy</span>
       </p>
+      <div class="typed-text-container">
+        <span id="typing"></span>
+      </div>
       <div class="icon">
         <a href="https://www.linkedin.com/in/bibekroy478/" target="_blank">
           <img src="Assets/linkedin.png" alt="linkedin">
@@ -65,23 +69,32 @@
     <h2 class="abt">About Me</h2>
     <div class="about">
       <div class="content">
-        <div class="box">
-          <h1>Education</h1>
-          <p class="education-title">B.Tech</p>
-          <p class="education-subtitle">Computer Science and Engineering</p>
-          <p class="education-title">Diploma</p>
-          <p class="education-subtitle">Computer Science and Technology</p>
-        </div>
         <div class="education-content">
-          <p> Motivated and passionate <b>Web Developer</b> currently pursuing a B.Tech in Computer Science and
+          <p>Motivated and passionate <b>Web Developer</b> currently pursuing a B.Tech in Computer Science and
             Engineering at the Central Institute of Technology, Kokrajhar. Proficient in responsive web
             development and skilled in designing, developing, and maintaining efficient, user-friendly web
             applications. Committed to addressing real-world challenges through technology while
             continuously advancing skills in the tech industry.</p>
         </div>
+        
+        <div class="education-section">
+          <h1>Education</h1>
+          <div class="education-grid">
+            <div class="box">
+              <p class="education-title">B.Tech in Computer Science and Engineering</p>
+              <p class="education-subtitle">Central Institute of Technology - Assam, India</p>
+              <p class="education-subtitle">Grade - 7.79 CGPA</p>
+            </div>
+            <div class="box">
+              <p class="education-title">Diploma in Computer Science and Technology</p>
+              <p class="education-subtitle">Siliguri Government Polytechnic - Siliguri, West Bengal</p>
+              <p class="education-subtitle">Grade - 8.1 CGPA</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
+</section>
 
   <section id="projects" class="card-section">
     <h2 class="abt">Projects</h2>
@@ -184,18 +197,8 @@
     </div>
 </section>
 
-  <!-- <section id="contact" class="card-section">
-    <h2 class="abt">Contact Me</h2>
-    <div class="form">
-      <input type="text" name="name" id="namef" placeholder="Your Name" required>
-      <input type="email" name="email" id="email" placeholder="Email" required>
-      <textarea name="message" id="message" placeholder="Type your message" required></textarea>
-      <button class="send">Send</button>
-    </div>
-  </section> -->
-
   <section id="contact">
-    <h1 class="abt">Contact Me</h1>
+    <h2 class="abt">Contact Me</h2>
     <div class="contact-info-upper-container">
       <div class="cicon">
         <a href="https://www.linkedin.com/in/bibekroy478/" target="_blank">
@@ -226,6 +229,8 @@
     </div>
   </footer>
 
+  <!-- Add Typed.js before main.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="main.js"></script>
 </body>
 </html>
